@@ -1,0 +1,40 @@
+*{
+    color: white;
+}
+#activeCases{
+    font-size: 7rem;
+}
+
+#administered{
+    font-size: 5rem;
+}
+
+span{
+    font-size: 1.5rem;
+}
+.sub-padding{
+    padding: 5%;
+}
+
+.subs{
+    font-size: 3rem;
+}
+body{
+    background: #1f1f1f !important;
+}
+
+.container{
+    height: 100vh;
+}
+
+#confirmed{
+    color: yellow;
+}
+
+#recovered{
+    color: rgb(170, 255, 0);
+}
+
+#deaths{
+    color: tomato;
+}
