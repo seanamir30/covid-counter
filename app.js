@@ -5,11 +5,27 @@ fetch('https://covid-api.mmediagroup.fr/v1/cases?country=Philippines')
         var confirmed = All.confirmed;
         var recovered = All.recovered;
         var deaths = All.deaths;
-        var activeCases = confirmed-recovered-deaths
-        document.getElementById('confirmed').innerText=confirmed;
-        document.getElementById('recovered').innerText=recovered;
-        document.getElementById('deaths').innerText=deaths;
-        document.getElementById('activeCases').innerText=activeCases;
+        var activeCases = confirmed-recovered-deaths;
+        if(confirmed === 0){
+            document.getElementById('confirmed').innerText= '---'
+        } else{
+            document.getElementById('confirmed').innerText=confirmed;
+        }
+        if(recovered === 0){
+            document.getElementById('recovered').innerText= '---'
+        } else{
+            document.getElementById('recovered').innerText=recovered;
+        }
+        if(deaths === 0){
+            document.getElementById('deaths').innerText= '---'
+        } else{
+            document.getElementById('deaths').innerText=deaths;
+        }
+        if(confirmed === 0 || recovered === 0 || deaths === 0){
+            document.getElementById('activeCases').innerText= '---'
+        } else{
+            document.getElementById('activeCases').innerText=activeCases;
+        }
 
     })
 
